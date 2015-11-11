@@ -79,19 +79,6 @@ abstract class IndicatorLockKey
     public abstract void on_state_changed();
 }
 
-class Indicator_NumLock : IndicatorLockKey
-{
-    public Indicator_NumLock()
-    {
-        base("Num_Lock", "numlock-disabled-symbolic");
-    }
-
-    public override void on_state_changed()
-    {
-        this.set_active(map.get_num_lock_state());
-    }
-}
-
 class Indicator_CapsLock : IndicatorLockKey
 {
     public Indicator_CapsLock()
@@ -111,7 +98,6 @@ public class IndicatorLockKeys
     {
         Gtk.init(ref args);
         var caps = new Indicator_CapsLock();
-        var num = new Indicator_NumLock();
         Gtk.main();
         return 0;
     }
