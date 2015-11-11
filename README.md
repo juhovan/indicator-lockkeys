@@ -1,21 +1,10 @@
+## This version only includes Caps Lock indicator as Num Lock is useless on my laptop
+
 ![logo.png](http://i.imgur.com/wqRFty2.png)
 
 This is just another indicator for **Lock Keys** with fancy
-icons which can enable and disable **Caps Lock** and **Num Lock**
+icons which can enable and disable **Caps Lock**
 directly from the **Graphical User Interface**.
-
-
-## Installation via ppa
-
-Use the following ppa (***only Ubuntu >= 15.04 is supported***):
-```
-sudo add-apt-repository ppa:l3on/indicator-lockkeys
-sudo apt-get update
-sudo apt-get install indicator-lockkeys
-```
-
-Then exec `indicator-lockkeys` from command-line or logout and login
-in Unity again.
 
 ## Manually
 
@@ -29,3 +18,7 @@ Build and install system wide:
 make
 sudo make install
 ```
+
+Then exec `indicator-lockkeys` from command-line or logout and login
+in Unity again.
+
